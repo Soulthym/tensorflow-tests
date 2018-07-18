@@ -1,0 +1,74 @@
+844614500.0
+
+
+
+
+
+
+Shape: (1500, 1500) Device: /gpu:0
+Time taken: 0:00:00.475958
+
+
+
+
+
+
+Device mapping:
+/job:localhost/replica:0/task:0/device:XLA_CPU:0 -> device: XLA_CPU device
+/job:localhost/replica:0/task:0/device:XLA_GPU:0 -> device: XLA_GPU device
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: GeForce GTX 1070 with MaxQ Design, pci bus id: 0000:01:00.0, compute capability: 6.1
+random_uniform/RandomUniform: (RandomUniform): /job:localhost/replica:0/task:0/device:GPU:0
+random_uniform/sub: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+random_uniform/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+random_uniform: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+transpose/Rank: (Rank): /job:localhost/replica:0/task:0/device:GPU:0
+transpose/sub: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+transpose/Range: (Range): /job:localhost/replica:0/task:0/device:GPU:0
+transpose/sub_1: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+transpose: (Transpose): /job:localhost/replica:0/task:0/device:GPU:0
+MatMul: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+random_uniform/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+random_uniform/min: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+random_uniform/max: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+transpose/sub/y: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+transpose/Range/start: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+transpose/Range/delta: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+843755460.0
+
+
+
+
+
+
+Shape: (1500, 1500) Device: /cpu:0
+Time taken: 0:00:00.470580
+
+
+
+
+
+
+Device mapping:
+/job:localhost/replica:0/task:0/device:XLA_CPU:0 -> device: XLA_CPU device
+/job:localhost/replica:0/task:0/device:XLA_GPU:0 -> device: XLA_GPU device
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: GeForce GTX 1070 with MaxQ Design, pci bus id: 0000:01:00.0, compute capability: 6.1
+random_uniform/RandomUniform: (RandomUniform): /job:localhost/replica:0/task:0/device:CPU:0
+random_uniform/sub: (Sub): /job:localhost/replica:0/task:0/device:CPU:0
+random_uniform/mul: (Mul): /job:localhost/replica:0/task:0/device:CPU:0
+random_uniform: (Add): /job:localhost/replica:0/task:0/device:CPU:0
+transpose/Rank: (Rank): /job:localhost/replica:0/task:0/device:CPU:0
+transpose/sub: (Sub): /job:localhost/replica:0/task:0/device:CPU:0
+transpose/Range: (Range): /job:localhost/replica:0/task:0/device:CPU:0
+transpose/sub_1: (Sub): /job:localhost/replica:0/task:0/device:CPU:0
+transpose: (Transpose): /job:localhost/replica:0/task:0/device:CPU:0
+MatMul: (MatMul): /job:localhost/replica:0/task:0/device:CPU:0
+Sum: (Sum): /job:localhost/replica:0/task:0/device:CPU:0
+random_uniform/shape: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+random_uniform/min: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+random_uniform/max: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+transpose/sub/y: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+transpose/Range/start: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+transpose/Range/delta: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+Const: (Const): /job:localhost/replica:0/task:0/device:CPU:0
